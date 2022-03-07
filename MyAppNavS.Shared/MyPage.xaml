@@ -9,12 +9,19 @@
 
     <NavigationView>
         <NavigationView.MenuItems>
-            <NavigationViewItem Content="Home" ToolTipService.ToolTip="Home"/>
-            <NavigationViewItem Content="Collections" oolTipService.ToolTip="Collections"/>
+            <NavigationViewItem Content="Home" />
+            <NavigationViewItem Content="Customers"/>
+            <NavigationViewItem Content="Orders"/>
+            <NavigationViewItem Content="Products"/>
+            <NavigationViewItem Content="Activity Log"/>
         </NavigationView.MenuItems>
+
         <NavigationView.FooterMenuItems>
-            <NavigationViewItem Content="Home" ToolTipService.ToolTip="Home"/>
-            <NavigationViewItem Content="Collections" oolTipService.ToolTip="Collections"/>
+            <NavigationViewItem Content="Home" />
+            <NavigationViewItem Content="Customers"/>
+            <NavigationViewItem Content="Orders"/>
+            <NavigationViewItem Content="Products"/>
+            <NavigationViewItem Content="Activity Log"/>
         </NavigationView.FooterMenuItems>
     </NavigationView>
 </Page>

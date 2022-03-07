@@ -33,10 +33,20 @@ namespace MyAppNavS
         {
             base.OnLaunched(args);
             Page v = (Page)new MyPage();
-            Window.Current.Content = (UIElement) v.Content;
-            MainWindow.Activate();
+            if (Window.Current == null)
+            {
+                m_window = new Window();
+                MainWindow = m_window;
+                MainWindow.Content = (UIElement)v;
+                MainWindow.Activate();
+            }
+            else
+            {
+                MainWindow = Window.Current;
+                MainWindow.Content = (UIElement)v.Content;
+                MainWindow.Activate();
+            }
         }
-
         private Window m_window;
     }
 }
