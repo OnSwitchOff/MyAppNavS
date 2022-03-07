@@ -7,62 +7,14 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Page.Resources>
-        <Style x:Key="NavigationViewStyle" TargetType="NavigationView">
-            <Setter Property="Background" Value="{ThemeResource ApplicationPageBackgroundThemeBrush}" />
-            <Setter Property="IsTitleBarAutoPaddingEnabled" Value="True" />
-            <Setter Property="IsSettingsVisible" Value="False" />
-            <Setter Property="IsBackButtonVisible" Value="Collapsed" />
-            <Setter Property="IsBackEnabled" Value="False" />
-            <Setter Property="CompactModeThresholdWidth" Value="640" />
-            <Setter Property="ExpandedModeThresholdWidth" Value="1008" />
-            <Setter Property="IsTabStop" Value="False" />
-            <Setter Property="AlwaysShowHeader" Value="True" />
-            <Setter Property="IsPaneToggleButtonVisible" Value="True" />
-            <Setter Property="AlwaysShowHeader" Value="True" />
-        </Style>
-    </Page.Resources>
-    
-    <NavigationView
-        x:Name="navigationView"
-        IsBackButtonVisible="Visible"
-        Style="{StaticResource NavigationViewStyle}">
+    <NavigationView>
         <NavigationView.MenuItems>
-            <NavigationViewItem Content="Home" >
-
-            </NavigationViewItem>
-            <NavigationViewItem Content="Customers">
-
-            </NavigationViewItem>
-            <NavigationViewItem Content="Orders">
-
-            </NavigationViewItem>
-            <NavigationViewItem Content="Products">
-
-            </NavigationViewItem>
-            <NavigationViewItem Content="Activity Log">
-
-            </NavigationViewItem>
+            <NavigationViewItem Content="Home" ToolTipService.ToolTip="Home"/>
+            <NavigationViewItem Content="Collections" oolTipService.ToolTip="Collections"/>
         </NavigationView.MenuItems>
-
         <NavigationView.FooterMenuItems>
-            <NavigationViewItem Content="Home" >
-
-            </NavigationViewItem>
-            <NavigationViewItem Content="Customers">
-
-            </NavigationViewItem>
-            <NavigationViewItem Content="Orders">
-
-            </NavigationViewItem>
-            <NavigationViewItem Content="Products">
-
-            </NavigationViewItem>
-            <NavigationViewItem Content="Activity Log">
-
-            </NavigationViewItem>
+            <NavigationViewItem Content="Home" ToolTipService.ToolTip="Home"/>
+            <NavigationViewItem Content="Collections" oolTipService.ToolTip="Collections"/>
         </NavigationView.FooterMenuItems>
-
-        <Frame x:Name="frame" />
     </NavigationView>
 </Page>

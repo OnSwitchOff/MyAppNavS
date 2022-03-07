@@ -32,25 +32,8 @@ namespace MyAppNavS
         protected override void OnLaunched(Microsoft.UI.Xaml.LaunchActivatedEventArgs args)
         {
             base.OnLaunched(args);
-
-            m_window = new Window();
-            MainWindow = m_window;
             Page v = (Page)new MyPage();
-            m_window.Content = v;
-
-            var activationHandler = _activationHandlers
-                                                .FirstOrDefault(h => h.CanHandle(activationArgs));
-
-            if (activationHandler is not null)
-            {
-                await activationHandler.HandleAsync(activationArgs);
-            }
-
-            if (_defaultHandler.CanHandle(activationArgs))
-            {
-                await _defaultHandler.HandleAsync(activationArgs);
-            }
-
+            Window.Current.Content = (UIElement) v.Content;
             MainWindow.Activate();
         }
 
