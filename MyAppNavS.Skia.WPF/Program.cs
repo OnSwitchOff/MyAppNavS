@@ -1,0 +1,3 @@
+namespace MyAppNavS.Skia.Gtk
+{
+}

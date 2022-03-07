@@ -1,0 +1,51 @@
+﻿<Page
+    x:Class="MyAppNavS.MyPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyAppNavS"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <NavigationView
+        x:Name="navigationView"
+        IsBackButtonVisible="Visible">
+        <NavigationView.MenuItems>
+            <NavigationViewItem Content="Home" >
+
+            </NavigationViewItem>
+            <NavigationViewItem Content="Customers">
+
+            </NavigationViewItem>
+            <NavigationViewItem Content="Orders">
+
+            </NavigationViewItem>
+            <NavigationViewItem Content="Products">
+
+            </NavigationViewItem>
+            <NavigationViewItem Content="Activity Log">
+
+            </NavigationViewItem>
+        </NavigationView.MenuItems>
+
+        <NavigationView.FooterMenuItems>
+            <NavigationViewItem Content="Home" >
+
+            </NavigationViewItem>
+            <NavigationViewItem Content="Customers">
+
+            </NavigationViewItem>
+            <NavigationViewItem Content="Orders">
+
+            </NavigationViewItem>
+            <NavigationViewItem Content="Products">
+
+            </NavigationViewItem>
+            <NavigationViewItem Content="Activity Log">
+
+            </NavigationViewItem>
+        </NavigationView.FooterMenuItems>
+
+        <Frame x:Name="frame" />
+    </NavigationView>
+</Page>

@@ -1,0 +1,14 @@
+{
+  "solution": {
+    "path": "MyAppNavS.sln",
+    "projects": [
+		"MyAppNavS.Shared\\MyAppNavS.Shared.shproj",
+
+		"MyAppNavS.Mobile\\MyAppNavS.Mobile.csproj",
+
+		"MyAppNavS.Wasm\\MyAppNavS.Wasm.csproj",
+
+		"MyAppNavS.Skia.Gtk\\MyAppNavS.Skia.Gtk.csproj",
+    ]
+  }
+}
