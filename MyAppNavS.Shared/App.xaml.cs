@@ -37,7 +37,21 @@ namespace MyAppNavS
             MainWindow = m_window;
             Page v = (Page)new MyPage();
             m_window.Content = v;
-            m_window.Activate();
+
+            var activationHandler = _activationHandlers
+                                                .FirstOrDefault(h => h.CanHandle(activationArgs));
+
+            if (activationHandler is not null)
+            {
+                await activationHandler.HandleAsync(activationArgs);
+            }
+
+            if (_defaultHandler.CanHandle(activationArgs))
+            {
+                await _defaultHandler.HandleAsync(activationArgs);
+            }
+
+            MainWindow.Activate();
         }
 
         private Window m_window;

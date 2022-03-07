@@ -13,11 +13,11 @@
     <UpToDateCheckInput Include="..\MyAppNavS.Shared\**\*.xaml" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.Logging" Version="5.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="5.0.0" />
-    <PackageReference Include="Uno.WinUI.Skia.Gtk" Version="4.0.13" />
-    <PackageReference Include="Uno.WinUI.RemoteControl" Version="4.0.13" Condition="'$(Configuration)'=='Debug'" />
-    <PackageReference Include="Uno.UI.Adapter.Microsoft.Extensions.Logging" Version="4.0.13" />
+	  <PackageReference Include="Uno.CommunityToolkit.WinUI.UI.Behaviors" Version="7.1.100-dev.7.g758154cb81" />
+	  <PackageReference Include="Uno.Microsoft.Xaml.Behaviors.WinUI.Managed" Version="2.3.0" />
+	  <PackageReference Include="Uno.WinUI.Skia.Gtk" Version="4.0.13" />
+	  <PackageReference Include="Uno.WinUI.RemoteControl" Version="4.0.13" Condition="'$(Configuration)'=='Debug'" />
+	  <PackageReference Include="Uno.UI.Adapter.Microsoft.Extensions.Logging" Version="4.0.13" />
   </ItemGroup>
   <Import Project="..\MyAppNavS.Shared\MyAppNavS.Shared.projitems" Label="Shared" />
 </Project>
