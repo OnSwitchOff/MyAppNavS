@@ -13,6 +13,8 @@ namespace MyAppNavS
     /// </summary>
     public partial class App : Application
     {
+
+        public static Window MainWindow { get; internal set; }
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().
@@ -32,10 +34,10 @@ namespace MyAppNavS
             base.OnLaunched(args);
 
             m_window = new Window();
-            m_window.Activate();
-
+            MainWindow = m_window;
             Page v = (Page)new MyPage();
             m_window.Content = v;
+            m_window.Activate();
         }
 
         private Window m_window;
