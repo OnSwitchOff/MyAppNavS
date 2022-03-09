@@ -49,5 +49,10 @@
 		<PackageReference Include="Uno.Core.Extensions.Logging.Singleton" Version="4.0.0-dev.7" />
 	</ItemGroup>
 
+
+	<ItemGroup>
+	  <ProjectReference Include="..\TestClassLibrary\TestClassLibrary.csproj" />
+	</ItemGroup>
+
 	<Import Project="..\MyAppNavS.Shared\MyAppNavS.Shared.projitems" Label="Shared" />
 </Project>

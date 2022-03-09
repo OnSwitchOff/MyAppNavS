@@ -49,5 +49,10 @@
 		<PackageReference Include="Uno.UI.Adapter.Microsoft.Extensions.Logging" Version="4.0.13" />
 	</ItemGroup>
 
+
+	<ItemGroup>
+	  <ProjectReference Include="..\TestClassLibrary\TestClassLibrary.csproj" />
+	</ItemGroup>
+
 	<Import Project="..\MyAppNavS.Shared\MyAppNavS.Shared.projitems" Label="Shared" />
 </Project>

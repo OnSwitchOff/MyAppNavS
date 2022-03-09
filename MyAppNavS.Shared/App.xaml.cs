@@ -5,6 +5,7 @@ using Windows.ApplicationModel.Activation;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Navigation;
+using TestClassLibrary;
 
 namespace MyAppNavS
 {
@@ -33,10 +34,11 @@ namespace MyAppNavS
         {
             base.OnLaunched(args);
             Page v = (Page)new MyPage();
+            Class1 test = new Class1();
             if (Window.Current == null)
             {
-                m_window = new Window();
-                MainWindow = m_window;
+                this.m_window = new Window();
+                MainWindow = this.m_window;
                 MainWindow.Content = (UIElement)v;
                 MainWindow.Activate();
             }
