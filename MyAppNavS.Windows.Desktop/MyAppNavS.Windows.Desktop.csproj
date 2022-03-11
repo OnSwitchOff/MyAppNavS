@@ -48,6 +48,7 @@
 		</PackageReference>
 
 		<PackageReference Include="Uno.Core.Extensions.Logging.Singleton" Version="4.0.0-dev.7" />
+		<PackageReference Include="PDFCreator" Version="1.0.0" />
 	</ItemGroup>
 
 

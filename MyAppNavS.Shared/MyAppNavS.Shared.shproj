@@ -13,6 +13,7 @@
   <ItemGroup>
     <_Globbed_Compile Remove="MainWindow.xaml.cs" />
     <_Globbed_Compile Remove="MyPage.xaml.cs" />
+    <_Globbed_Compile Remove="WebAssemblyHtmlControl.cs" />
   </ItemGroup>
   <ItemGroup>
     <_Globbled_Page Remove="MainWindow.xaml" />

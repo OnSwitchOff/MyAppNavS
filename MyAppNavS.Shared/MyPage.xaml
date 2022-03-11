@@ -43,5 +43,13 @@
 
         <Frame x:Name="frame" />
     </NavigationView>-->
-    <Button x:Name="btn">Click</Button>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btn">Click</Button>
+        <WebView2 Source="https://www.microsoft.com" Grid.Column="2"/>
+    </Grid>
+
 </Page>
