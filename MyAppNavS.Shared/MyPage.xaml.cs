@@ -13,6 +13,12 @@ namespace MyAppNavS
         public MyPage()
         {
             this.InitializeComponent();
+            btn.Click += Btn_Click;
+        }
+
+        private void Btn_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

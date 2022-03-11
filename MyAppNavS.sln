@@ -10,13 +10,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyAppNavS.Windows.Desktop",
 EndProject
 Project("{C7167F0D-BC9F-4E6E-AFE1-012C56B48DB5}") = "MyAppNavS.Windows.Package", "MyAppNavS.Windows.Package\MyAppNavS.Windows.Package.wapproj", "{3B5C0D50-C9B8-4CD7-8256-E2B17D422309}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestClassLibrary", "TestClassLibrary\TestClassLibrary.csproj", "{121E2DDC-AB89-4758-A67C-0F4100163AF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestClassLibrary", "TestClassLibrary\TestClassLibrary.csproj", "{121E2DDC-AB89-4758-A67C-0F4100163AF5}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		MyAppNavS.Shared\MyAppNavS.Shared.projitems*{1aa13270-f438-4864-9435-54fd806e10ea}*SharedItemsImports = 5
 		MyAppNavS.Shared\MyAppNavS.Shared.projitems*{6279c845-92f8-4333-ab99-3d213163593c}*SharedItemsImports = 13
 		MyAppNavS.Shared\MyAppNavS.Shared.projitems*{a5b8155a-118f-4794-b551-c6f3cf7e5411}*SharedItemsImports = 5
+		SharedProject1\SharedProject1.projitems*{a5b8155a-118f-4794-b551-c6f3cf7e5411}*SharedItemsImports = 5
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
