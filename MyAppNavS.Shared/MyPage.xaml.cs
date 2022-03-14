@@ -21,17 +21,18 @@ namespace MyAppNavS
         {
             this.InitializeComponent();
             //btn.Click += Btn_Click;
+            ViewModel = new MainViewModel();
+            ViewModel.PropertyChanged += ViewModel_PropertyChanged;
         }
 
-        private string text;
-        public string Text
+        private void ViewModel_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
-            get => text;
-            set
-            {
-                text = value;
-            }
+
         }
+
+        public MainViewModel ViewModel { get; }
+
+
 
         private void Btn_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
         {
