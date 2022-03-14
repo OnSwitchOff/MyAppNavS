@@ -57,8 +57,4 @@
 	</ItemGroup>
 
 	<Import Project="..\MyAppNavS.Shared\MyAppNavS.Shared.projitems" Label="Shared" />
-
-	<ItemGroup>
-	  <_Globbed_Compile Remove="MainViewModel.cs" />
-	</ItemGroup>
 </Project>
