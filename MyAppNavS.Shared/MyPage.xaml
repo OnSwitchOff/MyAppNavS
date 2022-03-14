@@ -20,13 +20,14 @@
             <Setter Property="AlwaysShowHeader" Value="True" />
             <Setter Property="IsPaneToggleButtonVisible" Value="True" />
             <Setter Property="AlwaysShowHeader" Value="True" />
+            <Setter Property="Background" Value="LightSeaGreen"/>
         </Style>
     </Page.Resources>
     <NavigationView x:Name="navigationView"
         IsBackButtonVisible="Visible"
         Style="{StaticResource NavigationViewStyle}">
         <NavigationView.MenuItems>
-            <NavigationViewItem Content="Home" />
+            <NavigationViewItem Content="Home" Background="PaleVioletRed" />
             <NavigationViewItem Content="Customers"/>
             <NavigationViewItem Content="Orders"/>
             <NavigationViewItem Content="Products"/>
@@ -41,15 +42,15 @@
             <NavigationViewItem Content="Activity Log"/>
         </NavigationView.FooterMenuItems>
 
-        <Frame x:Name="frame" />
+        <Frame x:Name="frame" Background="BurlyWood" />
     </NavigationView>-->
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="btn">Click</Button>
-        <WebView2 Source="https://www.microsoft.com" Grid.Column="2"/>
+        <Button x:Name="btn" Background="LightSeaGreen">Click</Button>
+        <TextBox Text="{x:Bind Text, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
     </Grid>
 
 </Page>

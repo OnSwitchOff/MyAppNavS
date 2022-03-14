@@ -20,7 +20,17 @@ namespace MyAppNavS
         public MyPage()
         {
             this.InitializeComponent();
-            btn.Click += Btn_Click;
+            //btn.Click += Btn_Click;
+        }
+
+        private string text;
+        public string Text
+        {
+            get => text;
+            set
+            {
+                text = value;
+            }
         }
 
         private void Btn_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
